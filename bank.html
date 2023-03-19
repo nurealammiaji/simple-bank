@@ -32,15 +32,23 @@
                     <h2 class="text-5xl">$1240</h2>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-5">
+        </section>
+        <section>
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto mt-10">
                 <div class="bg-blue-400 p-8 rounded-xl">
-                    <h4 class="text-3xl">Please Deposit</h4>
-                    <input class="px-3" type="text" placeholder="$ amount you want to deposit">
+                    <h4 class="text-3xl text-white">Please Deposit</h4>
+                    <br>
+                    <div class="ml-10">
+                        <input id="deposit-field" class="block px-3 py-2 rounded w-9/12" type="text" placeholder="$ amount you want to deposit">
+                        <button id="btn-deposit" class="block font-medium mt-5 py-2 px-8 bg-blue-600 hover:bg-blue-900 text-white rounded">Deposit</button>
+                    </div>
                 </div>
                 <div class="bg-violet-400 p-8 rounded-xl">
-                    <h4 class="text-3xl">Please Withdraw</h4>
-                    <div>
-                        <input class="px-3" type="text" placeholder="$ amount you want to withdraw">
+                    <h4 class="text-3xl text-white">Please Withdraw</h4>
+                    <br>
+                    <div class="ml-10">
+                        <input id="withdraw-field" class="block px-3 py-2 rounded w-9/12" type="text" placeholder="$ amount you want to withdraw">
+                        <button id="btn-withdraw" class="block font-medium mt-5 py-2 px-8 bg-violet-600 hover:bg-violet-900 text-white rounded">Withdraw</button>
                     </div>
                 </div>
             </div>
