@@ -9,6 +9,6 @@ document.getElementById('btn-submit').addEventListener('click', function(){
         window.location.href = 'bank.html';
     }
     else {
-        alert("Sorry!! Invalid Information. Please enter correct information.")
+        alert("Sorry!! Invalid information. Please enter the correct information.")
     }
 })
