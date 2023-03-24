@@ -19,7 +19,7 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
     //Deposit Field Empty
     depositField.value = '';
 
-    // Getting innerText from Element
+    // Getting innerText from Deposit
     let depositCurrent = document.getElementById('deposit-amount');
     let depositCurrentAmount = depositCurrent.innerText;
     let depositCurrentNumeric = parseFloat(depositCurrentAmount);
@@ -31,11 +31,12 @@ document.getElementById('btn-deposit').addEventListener('click', function(){
 
     depositCurrent.innerText = newDepositTotal;
 
-    // Balance Calculation
+    //Getting innerText from Balance
     let balanceCurrent = document.getElementById('balance-amount');
     let balanceCurrentAmount = balanceCurrent.innerText;
     let balanceCurrentAmountNumeric = parseFloat(balanceCurrentAmount);
-    
+
+    // Balance Calculation
     let oldBalance = balanceCurrentAmountNumeric;
     let newBalance = oldBalance + newDeposit;
     balanceCurrent.innerText = newBalance;

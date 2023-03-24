@@ -8,10 +8,23 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     // Empty Field
     withdrawField.value = '';
 
-    // Getting innerText from Element
+    // Getting innerText from Withdraw
     let withdrawCurrent = document.getElementById('withdraw-amount');
     let withdrawCurrentElement = withdrawCurrent.innerText;
     let withdrawCurrentElementNumeric = parseFloat(withdrawCurrentElement);
+
+    // Withdraw Calculation
+    let oldWithdraw = withdrawCurrentElementNumeric;
+    let newWithdraw = withdrawFieldElementNumeric;
+    let newWithdrawTotal = oldWithdraw + newWithdraw;
+
+    withdrawCurrent.innerText = newWithdrawTotal;
+
+    // Getting innerText from Balance
+    let balanceCurrentReloaded = document.getElementById('balance-amount');
+    let balanceCurrentReloadedAmount = balanceCurrentReloaded.innerText;
+    let balanceCurrentReloadedAmountNumeric = parseFloat(balanceCurrentReloadedAmount);
+
 
 
 })
