@@ -11,17 +11,20 @@
 
 document.getElementById('btn-deposit').addEventListener('click', function(){
     
-    // Deposit Calculation
+    // Getting Value from Input Field
     let depositField = document.getElementById('deposit-field');
     let depositElement = depositField.value;
-
     let depositElementNumeric = parseFloat(depositElement);
+    
+    //Deposit Field Empty
     depositField.value = '';
 
+    // Getting innerText from Element
     let depositCurrent = document.getElementById('deposit-amount');
     let depositCurrentAmount = depositCurrent.innerText;
     let depositCurrentNumeric = parseFloat(depositCurrentAmount);
     
+    // Deposit Calculation
     let oldDeposit = depositCurrentNumeric;
     let newDeposit = depositElementNumeric;
     let newDepositTotal = oldDeposit + newDeposit;
