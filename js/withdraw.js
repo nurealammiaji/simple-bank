@@ -25,6 +25,11 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     let balanceCurrentReloadedAmount = balanceCurrentReloaded.innerText;
     let balanceCurrentReloadedAmountNumeric = parseFloat(balanceCurrentReloadedAmount);
 
+    // Balance Calculation
+    let oldBalanceReloaded = balanceCurrentReloadedAmountNumeric;
+    let newBalanceReloaded = oldBalanceReloaded - newWithdraw;
+    balanceCurrentReloaded.innerText = newBalanceReloaded;
+
 
 
 })
