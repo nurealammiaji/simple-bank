@@ -30,6 +30,4 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     let newBalanceReloaded = oldBalanceReloaded - newWithdraw;
     balanceCurrentReloaded.innerText = newBalanceReloaded;
 
-
-
 })
