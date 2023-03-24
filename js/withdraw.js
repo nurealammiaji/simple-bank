@@ -5,7 +5,13 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     let withdrawFieldElement = withdrawField.value;
     let withdrawFieldElementNumeric = parseFloat(withdrawFieldElement);
 
+    // Empty Field
     withdrawField.value = '';
+
+    // Getting innerText from Element
+    let withdrawCurrent = document.getElementById('withdraw-amount');
+    let withdrawCurrentElement = withdrawCurrent.innerText;
+    let withdrawCurrentElementNumeric = parseFloat(withdrawCurrentElement);
 
 
 })
